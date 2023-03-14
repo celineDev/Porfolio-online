@@ -1,0 +1,53 @@
+#skills {
+    background-color: var(--bgc);
+    max-width: 100%;
+    padding: 5rem 1.25rem;
+}
+
+.technos {
+    max-width: 34.375rem;
+    display: block;
+    margin: 0 auto;
+}
+
+article {
+    background-color: #fff;
+    box-shadow: .125rem .25rem .5rem var(--shadow);
+    margin-bottom: 1.5625rem;
+    border-radius: .9375rem;
+    padding: 1.5625rem 3.125rem 2.5rem;
+    transition: 250ms;
+}
+
+article:hover {
+    scale: 1.01;
+    box-shadow: .1875rem .3125rem .5625rem #cccccc;
+}
+
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+article > h3 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.pink-icon {
+    color: #555;
+    padding: 0 .75rem;
+    transition: 500ms;
+}
+
+.pink-icon:hover {
+    color: var(--hover);
+}
+
+@media screen and (max-width: 23.4375rem){
+    article > h3 {
+        font-size: 1.125rem;
+    }
+}

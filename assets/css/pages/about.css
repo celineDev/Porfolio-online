@@ -1,0 +1,21 @@
+.container-about {
+    padding: 0 1.25rem;
+}
+
+.container-about > p {
+    margin-bottom: 2.1875rem;
+}
+
+#about > p {
+    margin: 2.1875rem 0;
+    font-size: 1.125rem;
+    line-height: 1.875rem;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 23.4375rem){
+    #about > p {
+        font-size: 1rem;
+        line-height: 1.5625rem;
+    }
+}

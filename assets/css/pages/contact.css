@@ -1,0 +1,36 @@
+#contact {
+    background-color: var(--bgc);
+    max-width: 100%;
+    padding: 5rem 1.25rem;
+    margin: 0;
+}
+
+.personnal {
+    display: flex;
+    justify-content: center;
+}
+
+.fa-linkedin:before,
+.fa-envelope:before {
+    margin-right: 1.25rem;
+}
+
+.personnal > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--fontColor);
+    text-decoration: none;
+    margin: 1.5625rem 5rem;
+    transition: 250ms;
+}
+
+@media screen and (max-width: 59.9375rem){
+    .personnal {
+        display: block;
+    }
+
+    .personnal > a:first-child {
+        margin-top: 5rem;
+    }
+}

@@ -1,0 +1,77 @@
+#projects {
+    display: flex;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1.875rem;
+    padding: 0 1.25rem;
+}
+
+.projects-projet {
+    border-radius: 1.5625rem;
+    max-width: 22.5rem;
+    flex-grow: 1;
+    flex-basis: 30%;
+    overflow: hidden;
+    box-shadow: .125rem .25rem .5rem var(--shadow);
+    transition: 250ms;
+    position: relative;
+}
+
+.projects-projet:hover {
+    box-shadow: .1875rem .3125rem .5625rem #cccccc;
+}
+
+.projects-container > figure > img {
+    object-fit: cover;
+    width: 100%;
+    height: 14.375rem;
+}
+
+.projects-projet > figcaption {
+    padding: 0 1.25rem 1.125rem;
+    text-align: left;
+}
+
+.projects-projet > figcaption > h3 {
+    margin-top: .625rem;
+    margin-bottom: .625rem;
+}
+
+.projects-projet > figcaption > p:first-child {
+    position: absolute;
+    top: 0;
+    left: 1.875rem;
+    background-color: var(--hover);
+    padding: .125rem .4375rem;
+    font-size: .875rem;
+    color: white;
+    border-bottom-left-radius: .3125rem;
+    border-bottom-right-radius: .3125rem;
+}
+
+.projects-projet > figcaption > p:nth-child(3) {
+    margin-bottom: .625rem;
+    line-height: 1.5rem;
+}
+
+.projects-projet > figcaption > a {
+    text-decoration: none;
+    color: var(--hover);
+    font-size: .875rem;
+    transition: 150ms;
+}
+
+.projects-projet > figcaption > a:hover {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 59.9375rem){}
+@media screen and (max-width: 23.4375rem){
+    .projects-container {
+        display: grid;
+    }
+}

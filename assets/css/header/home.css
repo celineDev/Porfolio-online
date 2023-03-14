@@ -1,0 +1,87 @@
+.banner img {
+    height: 53.375rem;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.banner-profile {
+    position: absolute;
+    top: 17.5rem;
+    width: 100%;
+    text-align: center;
+    transition: 250ms;
+}
+
+.banner-profile > figure > img {
+    border-radius: 50%;
+}
+
+  .banner-profile > figure > figcaption {
+    font-size: 2.25rem;
+    font-weight: 700;
+    transition: 250ms;
+}
+
+h1 {
+    font-size: 1.125rem;
+    margin-bottom: 1.25rem;
+    transition: 250ms;
+}
+
+.icon {
+    margin-bottom: 1.25rem;
+    transition: 250ms;
+}
+
+.icon > a:first-child {
+    color: var(--font);
+    margin-right: 0.625rem;
+}
+
+.icon > a:last-child {
+    color: var(--font);
+}
+
+.icon > a:hover {
+    transition: 250ms;
+    color: var(--hover);
+  }
+
+@media screen and (max-width: 59.9375rem){
+    .banner img {
+    height: 43.75rem;
+}
+
+.banner-profile {
+    top: 11.25rem;
+    }
+}
+
+@media screen and (max-width: 23.4375rem){
+    .banner img {
+    height: 37.5rem;
+}
+
+.banner-profile {
+    top: 9.6875rem;
+}
+
+.banner-profile > figure > img {
+    width: 9.375rem;
+    height: 9.375rem;
+}
+
+.banner-profile > figure > figcaption {
+    font-size: 1.875rem;
+}
+
+h1 {
+    font-size: 1rem;
+    margin-bottom: .75rem;
+}
+
+.icon {
+    margin-bottom: .75rem;
+    }
+}
