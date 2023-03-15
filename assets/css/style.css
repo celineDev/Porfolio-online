@@ -18,7 +18,7 @@
 }
 
 :root {
-    --hover: #D09483;
+    --hover: #C57C67;
     /* CE6A6B */
     --fontColor: #666666;
     --bgc: rgba(255, 237, 232, .4);
@@ -32,7 +32,8 @@ body {
     font-weight: 500;
 }
 
-button {
+.banner-profile > a,
+.container-about > a {
     font-family: 'Open Sans', sans-serif;
     font-weight: 600;
     font-size: 1rem;
@@ -42,14 +43,12 @@ button {
     padding: .625rem 1.875rem;
     cursor: pointer;
     transition: 250ms;
-}
-
-button > a {
     color: #fff;
     text-decoration: none;
 }
 
-button:hover {
+.banner-profile > a:hover,
+.container-about > a:hover {
     background-color: #FF6C60;
 }
 

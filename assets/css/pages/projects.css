@@ -62,14 +62,10 @@
     text-decoration: none;
     color: var(--hover);
     font-size: .875rem;
+    font-weight: 600;
     transition: 150ms;
 }
 
-.projects-projet > figcaption > a:hover {
-    font-weight: 600;
-}
-
-@media screen and (max-width: 59.9375rem){}
 @media screen and (max-width: 23.4375rem){
     .projects-container {
         display: grid;

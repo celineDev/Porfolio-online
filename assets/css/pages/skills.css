@@ -20,7 +20,6 @@ article {
 }
 
 article:hover {
-    scale: 1.01;
     box-shadow: .1875rem .3125rem .5625rem #cccccc;
 }
 

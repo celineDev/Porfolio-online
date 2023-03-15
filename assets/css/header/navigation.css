@@ -31,17 +31,17 @@ header.open .nav-container {
     align-items: center;
 }
 
-.link {
+.links {
     display: flex;
 }
 
-.link,
+.links,
 .toggle {
     list-style: none;
     font-size: 1rem;
 }
 
-.link > li > a,
+.links > li > a,
 .toggle > li > a {
     text-decoration: none;
     color: var(--fontColor);
@@ -49,7 +49,7 @@ header.open .nav-container {
     transition: 250ms;
 }
 
-.link > li > a:hover,
+.links > li > a:hover,
 .toggle > li > a:hover {
     color: var(--hover);
 }

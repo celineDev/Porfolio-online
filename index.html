@@ -2,25 +2,27 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="description" content="Portolio de développeur Front-End de Céline Mouflard">
+    <meta name="author" content="Céline Mouflard">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
     <header>
         <div class='nav-container'>
-            <a class='logo' href="#home">cm</a>
+            <a class='logo link' href="#home">cm</a>
             <nav>
-                <ul class='link hide-for-mobile'>
-                    <li><a href="#about">A propos</a></li>
-                    <li><a href="#skills">Compétences</a></li>
-                    <li><a href="#projects">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class='links hide-for-mobile'>
+                    <li><a class="link" href="#about">A propos</a></li>
+                    <li><a class="link" href="#skills">Compétences</a></li>
+                    <li><a class="link" href="#projects">Portfolio</a></li>
+                    <li><a class="link" href="#contact">Contact</a></li>
                 </ul>
 
-                <button class='burger-btn'>
+                <button aria-roledescription="Bouton pour ouvrir le menu et accéder au lien" class='burger-btn'>
                     <span></span>
                     <span></span>
                     <span></span>
@@ -29,36 +31,31 @@
         </div>
 
         <ul class='toggle hide-for-desktop'>
-            <li><a href="#about">A propos</a></li>
-            <li><a href="#skills">Compétences</a></li>
-            <li><a href="#projects">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class="link" href="#about">A propos</a></li>
+            <li><a class="link" href="#skills">Compétences</a></li>
+            <li><a class="link" href="#projects">Portfolio</a></li>
+            <li><a class="link" href="#contact">Contact</a></li>
         </ul>
     </header>
 
     <section id='home' class='banner-container'>
         <picture class="banner">
-            <source media="(max-width: 375px)"
-                    srcset="assets/img/banner/banner_640.jpg"
-                    sizes="375px">
-            <source media="(max-width: 959px)"
-                    srcset="assets/img/banner/banner_1280.jpg"
-                    sizes="959px">
-            <source srcset="assets/img/banner/banner_1920.jpg"
-                    sizes="1280px">
-            <img src="image-url-1280.jpeg" alt="banner">
+            <img src="assets/img/banner/banner_640.jpg"
+                srcset="assets/img/banner/banner_1920.jpg 1920w, assets/img/banner/banner_1280.jpg 1280w, assets/img/banner/banner_640.jpg 375w"
+                sizes="100vw"
+                alt="banner">
         </picture>
         <div class='banner-profile'>
             <figure>
-                <img src="assets/img/profile/profile.png" alt="avatar" />
+                <img src="assets/img/profile/profile.png" alt="avatar">
                 <figcaption>Céline Mouflard</figcaption>
             </figure>
             <h1>Développeuse Web Front-End </h1>
             <div class='icon'>
-                <a target="_blank" rel='noopener noreferrer'  href="https://www.linkedin.com/in/celine-mouflard/"><i title='Linkedin' class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
-                <a target="_blank" rel='noopener noreferrer'  href="https://github.com/celineDev?tab=repositories"><i title='Github'class="fab fa-github fa-2x" aria-hidden="true"></i></a>
+                <a title='Linkedin' target="_blank" rel='noopener noreferrer' href="https://www.linkedin.com/in/celine-mouflard/"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i></a>
+                <a title='Github' target="_blank" rel='noopener noreferrer'  href="https://github.com/celineDev?tab=repositories"><i class="fab fa-github fa-2x" aria-hidden="true"></i></a>
             </div>
-            <button class='contact'><a href="mailto:celine667@hotmail.fr">Contactez-moi</a></button>
+            <a href="mailto:celine667@hotmail.fr">Contactez-moi</a>
         </div>
     </section>
 
@@ -69,7 +66,7 @@
             <p>Passionnée par le développement web, je suis particulièrement intéressée par le front-end et le framework React JS. Pour élargir mes compétences, je continue à me former quotidiennement sur ce framework.
             J'ai comme ambition de progresser et d'élargir mes compétences afin de rester à la pointe de l'innovation en terme de compétences.
             </p>
-            <button><a target="_blank" rel="noreferrer" href="assets/img/cv/cv.pdf">Télécharger mon CV</a></button>
+            <a target="_blank" rel="noreferrer" aria-label="Link to PDF document" href="assets/img/cv/cv.pdf">Télécharger mon CV</a>
         </div>
     </section>
 
@@ -105,66 +102,66 @@
 
             <div class='projects-container'>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/booki.png" alt="site vitrine booki" />
+                    <img src="assets/img/projets/booki.png" alt="site vitrine booki">
                     <figcaption>
                         <p>HTML & CSS</p>
                         <h3>Booki</h3>
                         <p>Transformer une maquette en site web avec HTML & CSS.</p>
-                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/booki/">Démo du projet <i title='Laptop code'class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
+                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/booki/">Démo du projet <i title='Laptop code' class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/ohmyfood.png" alt="site ohmyfood" />
+                    <img src="assets/img/projets/ohmyfood.png" alt="site ohmyfood">
                     <figcaption>
                         <p>HTML & SASS</p>
                         <h3>Ohmyfood</h3>
                         <p>Transformer une maquette en site web avec des animations en mobile-first.</p>
-                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Ohmyfood/">Démo du projet <i title='Laptop code'class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
+                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Ohmyfood/">Démo du projet <i title='Laptop code' class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/lachouette.png" alt="site la chouette agence" />
+                    <img src="assets/img/projets/lachouette.png" alt="site la chouette agence">
                     <figcaption>
                         <p>SEO, accessibilité</p>
                         <h3>La chouette agence</h3>
                         <p>Amélioration du SEO et de l'accessibilité d'un site web.</p>
-                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/lachouetteagence.github.io/index.html">Démo du projet <i title='Laptop code'class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
+                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/lachouetteagence.github.io/index.html">Démo du projet <i title='Laptop code' class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/kanap.png" alt="site kanap" />
+                    <img src="assets/img/projets/kanap.png" alt="site kanap">
                     <figcaption>
                         <p>Javascript</p>
                         <h3>Kanap</h3>
                         <p>Réalisation de la partie Javascript d'un site e-commerce dont le back et l'API sont fournit.</p>
-                        <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev/kanap">Repo Github du projet <i title='Github'class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev/kanap">Repo Github du projet <i title='Github' class="fab fa-github fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/groupomania.png" alt="site groupomania" />
+                    <img src="assets/img/projets/groupomania.png" alt="site groupomania">
                     <figcaption>
                         <p>React JS</p>
                         <h3>Groupomania</h3>
                         <p>Construire un réseau social interne entreprise.</p>
-                        <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev/groupomania_22022022">Repo Github du projet <i title='Github'class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+                        <a title='github' target="_blank" rel='noreferrer' href="https://github.com/celineDev/groupomania_22022022">Repo Github du projet <i title='Github' class="fab fa-github fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/tipcal.png" alt="tip calculator app" />
+                    <img src="assets/img/projets/tipcal.png" alt="tip calculator app">
                     <figcaption>
                         <p>Javascript</p>
                         <h3>Tip Calculator App</h3>
                         <p>Application qui calcule le pourboire en fonction du prix, du nombres de personnes et du pourcentage à verser.</p>
-                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Tip-Calculator-App/">Démo du projet <i title='Laptop code'class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
+                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/Tip-Calculator-App/">Démo du projet <i title='Laptop code' class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
                 <figure  class='projects-projet'>
-                    <img src="assets/img/projets/todo.png" alt="Todo aoo" />
+                    <img src="assets/img/projets/todo.png" alt="Todo aoo">
                     <figcaption>
                         <p>Javascript</p>
                         <h3>Todo App</h3>
                         <p>Application de liste to-do.</p>
-                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/To-do-app/">Démo du projet <i title='Laptop code'class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
+                        <a target="_blank" rel='noreferrer' href="https://celinedev.github.io/To-do-app/">Démo du projet <i title='Laptop code' class="fas fa-laptop-code fa-lg" aria-hidden="true"></i></a>
                     </figcaption>
                 </figure>
             </div>
@@ -175,8 +172,8 @@
         <h2>Contact<span>contactez-moi</span></h2>
         <div class="separation-line"></div>
         <div class='personnal'>
-            <a title='Email' target="_blank" rel='noopener noreferrer'  href="mailto:celine667@hotmail.fr"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i>Par Email</a>
-            <a title='Linkedin' target="_blank" rel='noopener noreferrer'  href="https://www.linkedin.com/in/celine-mouflard/"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>Linkedin</a>
+            <a target="_blank" rel='noopener noreferrer'  href="mailto:celine667@hotmail.fr"><i class="fas fa-envelope fa-2x" aria-hidden="true"></i>Par Email</a>
+            <a target="_blank" rel='noopener noreferrer'  href="https://www.linkedin.com/in/celine-mouflard/"><i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>Linkedin</a>
         </div>
     </section>
 

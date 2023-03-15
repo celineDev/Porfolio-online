@@ -7,6 +7,7 @@ const date = new Date()
 const currentYear = date.getFullYear()
 currentDate.innerText = currentYear
 
+// Close burger menu when the window is maximized
 window.addEventListener('resize', () => {
     if (header.classList.contains('open') && innerWidth > 959) {
         header.classList.remove('open')
@@ -14,7 +15,13 @@ window.addEventListener('resize', () => {
     }
 })
 
-function handleMenu () {
+// Burguer menu open and close
+handleMenu()
+
+// scroll smoothly to link
+handleClick()
+
+function handleMenu() {
     btn.addEventListener('click', () => {
         if (header.classList.contains('open')) {
             header.classList.remove('open')
@@ -26,4 +33,19 @@ function handleMenu () {
     })
 }
 
-handleMenu()
+function handleClick() {
+    const tabs = document.querySelectorAll('.link')
+    tabs.forEach(tab => {
+        tab.addEventListener('click', (e) => {
+            e.preventDefault()
+            let target = tab.getAttribute('href')
+            if (target.charAt(0) === '#') {
+                const offset = document.querySelector(target).offsetTop - 160
+                window.scrollTo({
+                    top: offset,
+                    behavior: 'smooth'
+                })
+            }
+        })
+    })
+}
