@@ -4,7 +4,6 @@
 
 .projects-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     gap: 1.875rem;
     padding: 0 1.25rem;
