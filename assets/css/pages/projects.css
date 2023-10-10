@@ -65,8 +65,19 @@
     transition: 150ms;
 }
 
-@media screen and (max-width: 23.4375rem){
+@media screen and (max-width: 50.4375rem){
     .projects-container {
         display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 25rem){
+    .projects-projet {
+        min-width: 270px;
+    }
+    .projects-container {
+        display: grid;
+        grid-template-columns: 1fr;
     }
 }
